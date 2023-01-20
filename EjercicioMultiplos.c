@@ -2,6 +2,7 @@
 
 int main(){
 
+//APERTURA DEL ARCHIVO
     FILE *fp=NULL;
     FILE *fp1=NULL;
     int x;
@@ -9,6 +10,7 @@ int main(){
     fp=fopen("vector.txt","r");
     fp1=fopen("Sustitucion.txt","w");
 
+//SI NO ENCUENTRA EL ARCHIVO
     if (fp==NULL){
         printf("No se puede abrir el archivo");
         return -1;
@@ -18,6 +20,7 @@ int main(){
         return -1;
     }
 
+//PROCESO
     while (!feof(fp)){
         fscanf(fp,"%d",&x);
         if(x%10==0){
@@ -27,7 +30,7 @@ int main(){
         }
     }
     
-
+//CERRAR ARCHIVO
      fclose(fp);
      fclose(fp1);
      return 0;
