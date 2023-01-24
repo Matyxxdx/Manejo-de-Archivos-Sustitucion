@@ -68,7 +68,7 @@ int main() {
                 if (cont_citas>0){
                 char buffer[100];
                 FILE *fp;
-                fp = fopen("borradorcitas.txt", "r");
+                fp = fopen("agendamientocitas.txt", "r");
                 printf("\n");
 
                 while(!feof(fp)){
