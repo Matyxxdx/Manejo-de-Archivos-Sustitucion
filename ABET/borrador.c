@@ -39,7 +39,7 @@ void leer_cita(cita *c) {
 
 void guardar_cita(cita c) {
    FILE *fp;
-   fp = fopen("borradorcitas.txt", "a");
+   fp = fopen("agendamientocitas.txt", "a");
    fprintf(fp, "Paciente: %s %s\nEdad: %d\nContacto: %d\nMotivo de la cita: %s\nFecha agendada: %s\nHora de la cita: %s\nCiudad: %s \n\n", c.apellido, c.nombre, c.edad, c.telefono, c.motivo, c.fecha, c.hora, c.ciudad);
    fclose(fp);
    printf("\nCita guardada correctamente\n");
