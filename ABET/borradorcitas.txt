@@ -1,0 +1,8 @@
+Paciente: Robayo Matias
+Edad: 15
+Contacto: 123456
+Motivo de la cita: Consulta
+Fecha agendada: 2015
+Hora de la cita: 12
+Ciudad: Quito 
+
